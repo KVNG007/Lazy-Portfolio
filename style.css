@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap'); 
+
+
+
+*::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+body{
+    box-sizing: border-box;
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    font-family:'Fredoka', sans-serif;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+
+} 
+
+#btt {
+    transform:rotate(90deg);
+    position:fixed;
+    width: 40px;
+    right:10px;
+    top: 90%;
+    border: 1px solid  rgb(233, 8, 83);
+    border-radius: 50%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+span {
+    position:relative;
+}
+span::before {
+    position:absolute;
+    content: "";
+    width:20px;
+    border-bottom: 2px solid rgb(233, 8, 83);
+}
+
+
+header {
+    background-color:black;
+    color: #ffff;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+nav {
+    text-align: left;
+}
+nav img {
+    cursor:pointer;
+}
+
+
+.grids h3 {
+    padding:5px;
+}
+.grids a {
+    padding:5px;
+}
+
+
+
+header p, header h1 {
+    text-align: center;
+}
+
+header h1 {
+    margin:40px 0px 5px 0px;
+    padding:0;
+}
+    
+header p {
+    font-size:.9em;
+}
+    
+header button {
+    background-color: rgb(199, 44, 78);
+    color: #ffff;
+    padding:9px 12px;
+    margin:5px 0px 100px 0px;
+    display: inline block;
+    font-size: .7em;
+    text-decoration: none;
+    border:none;
+    border-radius:5em;
+}
+
+header button:hover {
+    color: #ffff;
+    background-color: rgb(167, 37, 65);
+}
+
+/* ABOUT ABOUT ABOUT */
+.about h3 {
+    padding:90px 0px 20px 0px;
+    margin:0;
+}
+.about p {
+    width:60%;
+    margin: auto;
+}
+.about button {
+    background-color: rgb(199, 44, 78);
+    color: #ffff;
+    padding:9px 15px;
+    margin:60px 0px 30px 0px;
+    display: inline block;
+    font-size: .7em;
+    text-decoration: none;
+    border:none;
+    border-radius:5em;
+}
+
+.doings {
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 0px 80px 0px;
+}
+
+.doings h4 {
+    font-size:.8em;
+}
+.doings p {
+    width: 100%;
+    font-size:.8em;
+    padding: 5px 0px;
+}
+
+
+.works {
+    padding-top: 50px;
+}
+.works p {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.workings {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom:80px;
+}
+
+.workings img {
+    width: 240px;
+    height:200px;
+}
+
+#work-sp {
+    padding-top: 40px ;
+}
+
+/* TOUCH TOUCH TOUCH*/
+
+.touch {
+    text-align: center;
+    padding-top:50px;
+}
+.touch h3 {
+    padding-top:40px;
+}
+.touch button {
+    background-color: rgb(199, 44, 78);
+    color: #ffff;
+    padding:9px 15px;
+    margin:15px 0px 30px 0px;
+    display: inline block;
+    font-size: .7em;
+    text-decoration: none;
+    border:none;
+    border-radius:5em;
+}
+
+.touch__cont {
+    padding:30px 0px 50px 0px;
+}
+.touch__cont img {
+    padding:0px 5px;
+}
+
+
+
+footer {
+    padding: 5px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+    background-color:black;
+    color: #ffff;
+}
+
+
+/*ASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDSFAASDFASDFASDFASDFADSF*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap'); 
+
+/* body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Fredoka', sans-serif;
+} */
+
+.head {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    padding: .7rem;
+    gap: 1rem;
+
+}
+
+.link {
+    background:none;
+    border: none;
+    text-decoration: none;
+    color:rgb(95, 95, 95);
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.dropdown.active > .link, .link:hover {
+    color:black;
+    font-size: 1.0rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .5rem);
+    background-color: rgb(199, 44, 78);
+    padding: 2rem 1.5em;
+    width:150px;
+    border-radius: .3rem;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-15px) ;
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0) ;
+    pointer-events: auto;
+}
+
+h3 {
+    font-size: .9em;
+}
+
+.information-grid a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    display:block;
+}
+ 
+.information-grid {
+    text-align: left;
+}
+.information-grid h1 {
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    margin:0;
+    padding:10px 0px;
+    cursor: pointer;
+}
+.information-grid h1:hover {
+    font-size: 1.2em;
+}
+
+
+
+
+.login-form > input {
+    margin-bottom:.5em;
+}
+
+/* .dropdown-menu {
+    background-color: rgb(199, 44, 78);
+    position:absolute;
+    top:0;
+    left:0;
+    padding:50px 20px;
+    transform:translateX(-100%);
+    height:345px;
+    transition:transform .5s ease-in-out;
+} */
+
+
+/*ASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDSFAASDFASDFASDFASDFADSF*/
+
+
+
+
+
+
+
+
+
+
+@media(max-width:760px) {
+    .about__cont {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .workings {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 0px;
+    }
+
+    .works p, .about p  {
+        width: 80%;
+        margin: auto;
+    }
+
+    .workings img {
+        width: 150px;
+        height:100px;
+    }
+    
+
+}
+
+
+@media(max-width:480px) {
+
+    .dropdown-menu {
+        height:180px;
+    }
+    header h1 {
+        margin:10px 0px 5px 0px;
+        padding:0;
+    }
+        
+    header button {
+        padding:9px 12px;
+        margin:5px 0px 60px 0px;
+    }
+
+
+    .doings {
+        display:flex !important;
+        flex-direction: column;
+    }
+
+    .workings img {
+        width: 100px;
+        height:75px;
+    }
+
+    .works p, .about p  {
+        width: 100%;
+        margin: auto;
+    }
+
+    footer {
+        font-size:.5em;
+    }
+}
